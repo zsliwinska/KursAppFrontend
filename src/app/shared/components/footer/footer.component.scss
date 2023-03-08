@@ -1,4 +1,12 @@
+@import '../../../../variable.scss';
 :host{
-    background: #999;
+    background: $darkGray;
     padding: 20px;
+    color: #aaa;
+}
+.footerCopy {
+    text-align: center;
+}
+.footerManu{
+    margin-bottom: 15px;
 }

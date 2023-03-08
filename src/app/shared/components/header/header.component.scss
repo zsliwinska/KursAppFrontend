@@ -1,4 +1,12 @@
+@import '../../../../variable.scss';
 :host{
-    background: #ddd;
+    background: $darkGray;
     padding: 20px;
+}
+.logo{
+    font-size: 22px;
+    color: white;
+}
+.logoIcon, .shopBasket{
+    font-size: 30px;
 }
