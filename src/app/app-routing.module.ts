@@ -10,12 +10,14 @@ import { HomeComponent } from './modules/home/home.component';
 import { LoginComponent } from './modules/login/login.component';
 import { ProductComponent } from './modules/product/product.component';
 import { AdminProductAddComponent } from './modules/admin/admin-product-add/admin-product-add.component';
+import { ProductDetailsComponent } from './modules/product-details/product-details.component';
 
 const routes: Routes = [
   {
     path:'', component: DefaultComponent, children: [
       {path: '', component: HomeComponent},
       {path: 'products', component: ProductComponent},
+      {path: 'products/:slug', component: ProductDetailsComponent},
     ]
   },
   {

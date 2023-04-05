@@ -10,11 +10,18 @@
     font-size: 30px;
     font-weight: 500;
     margin-top: 20px;
-    color: $warm;
+    color: $warn;
 }
 .productContent{
     font-size: 18px;
 }
 mat-card{
     margin-bottom: 25px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #777;
 }
