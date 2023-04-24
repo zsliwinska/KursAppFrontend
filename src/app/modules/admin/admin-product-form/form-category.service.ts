@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { AdminCategoryNamesDto } from './AdminCategoryNamesDto';
+import { AdminCategoryNamesDto } from '../common/dto/AdminCategoryNamesDto';
 import { Observable } from 'rxjs';
 
 @Injectable({
