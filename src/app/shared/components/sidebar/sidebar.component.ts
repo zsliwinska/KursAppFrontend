@@ -1,12 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SidebarService } from './sidebar.service';
+import { SidebarCategory } from './model/sidebarCategory';
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
-export class SidebarComponent {
+export class SidebarComponent implements OnInit{
+  
+  categories: Array<SidebarCategory> = [];
+  
+  constructor(private sidebarService: SidebarService) {}
 
-  categories = ['Kategoria 1', 'Kategoria 2', 'Kategoria 3', 'Kategoria 4', 'Kategoria 5'];
+  ngOnInit(): void {
+  this.getCategories();
+  }
+
+  getCategories(){
+    return this.sidebarService.getCategories()
+    .subscribe(categories => this.categories = categories);
+  }
+
 
 }
